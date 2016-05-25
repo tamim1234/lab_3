@@ -1,6 +1,6 @@
 // This file contains material supporting section 2.8 of the textbook:
 // "Object Oriented Software Engineering" and is issued under the open-source
-// license found at www.lloseng.com 
+// license found at www.lloseng.com
 
 import postalcode.*;
 import java.io.*;
@@ -17,17 +17,20 @@ import java.io.*;
 public class PostalTest
 {
   //Class methods *****************************************************
- 
+  //dfgdfgd
+  //dfghdsfgh
+  //dhdsghsdg
   /**
    * Retrieves a postal code from the console and analyses it.
    */
   public static void main(String[] args)
   {
-    PostalCode code = null;	
+    PostalCode code = null;
     String codeString = null;
 
     System.out.println("\nPostal code analysis program.");
- 
+    System.out.println("\nPostal code analysis program.");
+
     codeString = getInput();  //Get the code to analyse
     try
     {
@@ -53,18 +56,18 @@ public class PostalTest
     else
       System.out.println(codeString + " is an invalid ZIP or postal code.");
   }
-  
+
   /**
-   * This method handles the input from the console.  It returns a 
+   * This method handles the input from the console.  It returns a
    * String containing the postal code to be analysed.
-   * 
+   *
    * @return A String containing a postal code.
    */
   static private String getInput()
   {
     byte[] buffer = new byte[1024];
     String myString = "";
-			
+
     System.out.print("Please enter a ZIP/postal code: ");
     try
     {
@@ -77,5 +80,5 @@ public class PostalTest
     }
     catch(Exception e){}
     return myString;
-  }	
+  }
 }
